@@ -1,0 +1,57 @@
+--- 
+$schemaver: 1.1
+name: petersonpest.github.io
+type: Command-line App
+aliases:
+short_description: peterson pest webpage
+assignment_group: gro:AD-Student Life Applications
+notes: 
+maintained_by:
+  - ndpete
+developed_by_byu: False
+ddd:
+  business_domain: 
+  ubiquitous_language_url: 
+  context_map_url: 
+links:
+  system_documentation_url: google.com
+  source_repo_url: https://github.com/test-ndpete-org/petersonpest.github.io
+  swagger_urls:
+microservice: True
+technologies_used:
+  - HTML
+  - CSS
+  - JavaScript
+stages:
+  production:
+    urls:
+      product_page: wikipedia
+      physical_url: 
+      virtual_url: github.com
+    hosting_location: AWS
+    aws_account: ad-oit-byu
+    relationships: 
+      depends_on:
+        db_read_write:
+          - library
+        db_read_only:
+          - alfresco
+        software:
+          - aws-deployment-image:production
+      supports:
+        software:
+          - ical-parser:development
+        service:
+      reverse_proxy: 
+      runs_on:
+        server_cluster:
+        virtual_server:
+        rack_server:
+        blade_server:
+tags:
+  data-sensitivity: public
+  env: production
+  app: petersonpest.github.io
+  team: add members
+federation_json_url: https://raw.githubusercontent.com/test-ndpete-org/petersonpest.github.io/master/.repo-meta.yml
+x-anything:
