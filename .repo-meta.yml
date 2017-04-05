@@ -1,0 +1,59 @@
+--- 
+$schemaver: 1.1
+name: petersonpest.github.io
+type: Web App
+aliases:
+  - Pest Control RUS
+short_description: peterson pest webpage
+assignment_group: gro:AD-Front End Technologies and Applications
+notes: 
+maintained_by:
+  - ndpete
+  - brettbeatty
+developed_by_byu: False
+ddd:
+  business_domain: 
+  ubiquitous_language_url: 
+  context_map_url: 
+links:
+  system_documentation_url: 
+  source_repo_url: https://github.com/test-ndpete-org/petersonpest.github.io
+  swagger_urls:
+microservice: False
+technologies_used:
+  - HTML
+  - CSS
+  - JavaScript
+stages:
+  production:
+    urls:
+      product_page: petersonpest.github.io
+      physical_url: petersonpest.github.io
+      virtual_url: petersonpest.github.io
+    hosting_location: Other
+    aws_account: 
+    relationships: 
+      depends_on:
+        db_read_write:
+          - cdrprd1
+        db_read_only:
+        software:
+          - YTime (Java):production
+      supports:
+        software:
+        service:
+      reverse_proxy: nautilus
+      runs_on:
+        server_cluster:
+          - sodalite
+        virtual_server:
+        rack_server:
+        blade_server:
+tags:
+  data-sensitivity: 
+  env: 
+  app: 
+  team: 
+federation_json_url: https://raw.githubusercontent.com/test-ndpete-org/petersonpest.github.io/master/.repo-meta.yml
+x-anything:
+
